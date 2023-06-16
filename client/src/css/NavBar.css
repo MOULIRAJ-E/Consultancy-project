@@ -1,0 +1,270 @@
+/* .navbarelt{
+    position:static;
+    width: 1380px;
+    height: 120px;
+    left: 1px;
+    top: 0px;
+background: rgba(255, 136, 229, 0.32);
+}
+
+
+.navlink1{
+    position: absolute;
+width: 264px;
+height: 19px;
+left: 90px;
+top: 42px;
+text-decoration:none;
+font-family: 'Inter';
+font-style: normal;
+font-weight: lighter;
+font-size: 22px;
+line-height: 39px;
+
+color:#702963;    
+
+}
+
+.navlink2{
+    position: absolute;
+width: 264px;
+height: 19px;
+left: 270px;
+top: 42px;
+text-decoration: none;
+font-family: 'Inter';
+font-style: normal;
+font-weight:lighter;
+font-size: 22px;
+line-height: 39px;
+
+color:#702963;
+
+}
+.navlink3 img{
+position: absolute;
+left: 650px;
+top: 10px;
+width:100px;
+height:100px;
+text-decoration: none;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 39px;
+
+color:#702963 ;
+
+}
+
+.navlink4{
+    position: absolute;
+width: 264px;
+height: 19px;
+left: 900px;
+top: 42px;
+text-decoration: none;
+font-family: 'Inter';
+font-style: normal;
+font-weight: lighter;
+font-size: 22px;
+line-height: 39px;
+
+color: #702963;
+
+}
+
+.navlink5{
+    position: absolute;
+width: 264px;
+height: 19px;
+left: 1100px;
+top: 42px;
+text-decoration: none;
+font-family: 'Inter';
+font-style: normal;
+font-weight:lighter;
+font-size: 22px;
+line-height: 39px;
+
+color:#702963;
+}
+
+.navlink1:hover{
+    color:#9F2B68;
+}.navlink2:hover{
+    color:#9F2B68;
+}.navlink4:hover{
+    color:#9F2B68;
+}.navlink5:hover{
+    color:#9F2B68;
+} */
+
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .pages {
+    color: #702963;
+    text-align: center;
+    font-size: calc(1.5rem + 2vw);
+    margin-top: 10%;
+    
+   
+  }
+  
+  .navbar {
+    /* background-color: rgba(255, 136, 229, 0.32); */
+    background-color:#faecf2;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    box-shadow: #1f1f1e;
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    max-width: 1500px;
+  }
+  
+  .main-container{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:rgba(0,0,0,0.3);
+  }
+  
+  .nav-logo {
+    display: flex;
+    color: #1f1f1e;
+    align-items:stretch;
+    margin-left: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    flex-grow: 1;
+  }
+  
+  .nav-logo img{
+    margin-bottom:14px;
+    margin-right: 15px;
+    width:50px;
+    height:45px;
+  }
+
+  .icon 
+  {
+    height: 20px;
+    width: 20px;
+  }
+
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    margin-right: 2rem;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    text-decoration:none;
+    color:#702963;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    border-bottom: 3px solid transparent;
+  }
+  .fa-code {
+    margin-left: 1rem;
+  }
+  
+  .nav-item {
+    text-decoration: none;
+    line-height: 40px;
+    margin-right: 1rem;
+  }
+  
+  /* .nav-item:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width 0.7s ease, background-color 0.5s ease;
+  } */
+  
+  .nav-item:hover {
+    text-decoration: none;
+    /* width: 100%;
+    background:#9F2B68; */
+  }
+  
+  .nav-item.active {
+    
+    text-decoration: none;
+    color: #9F2B68;
+    border: 1px solid #9F2B68;
+  }
+  
+  .nav-icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 960px) {
+    
+    .nav-menu {
+        
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      border-top: 1pxsolid #fff;
+      position: absolute;
+      top: 80px;
+      left: -110%;
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
+  
+    .nav-menu.active {
+        
+      background: rgba(255, 136, 229);;
+      left: 0px;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+      text-decoration: none;
+    }
+    .nav-item .active {
+      color: #ffdd40;
+      border: none;
+    }
+    .nav-links {
+      padding: 1.5rem;
+      width: 100%;
+      display: table;
+    }
+  
+    .nav-icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: #9F2B68;
+    }
+  }
